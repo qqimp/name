@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a href="#search">search country</a>
+            </li>
+            <li>
+              <h1>Find Your Country</h1>
+            </li>
+            <li>
+              <a href="#all">all countries</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="seacrh-section" id="search">
+        <h2>Search</h2>
+        <form class="search-form" id="search-form">
+          <label for="">Country name</label>
+          <input
+            type="text"
+            name="search"
+            placeholder="Enter the country name please"
+          />
+          <button type="submit" id="search-btn">search</button>
+        </form>
+        <h3>search results</h3>
+        <ul class="search-results" id="search-results"></ul>
+      </section>
+      <section class="all-countries-section" id="all">
+        <h2>All Countries</h2>
+        <ul class="countries-list" id="countries-list"></ul>
+      </section>
+      <div class="modal is-hidden" id="modal">
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{{#each this}}
+  <div class="modal-item">
+    <h3>
+      {{name}} - {{capital}}
+      <br />
+      ({{nativeName}})
+    </h3>
+    <div>
+      <img src={{flag}} alt={{name}} width="250" />
+    </div>
+    <div class="info">
+        <h4>region: <span>{{region}} - {{subregion}}</span></h4>
+        <h4>area: <span>{{area}} km<sup>2</sup></span></h4>
+        <h4>population: <span>{{population}}</span></h4>
+        <h4>languages: </h4>
+          <ul>{{#each languages}}
+            <li>{{name}}-{{nativeName}}</li>
+            {{/each }}
+    </div>
+  </div>
+{{/each}}
